@@ -12,14 +12,15 @@
 #define Max_Row		64
 #define	Brightness	0xFF 
 #define X_WIDTH 	128
-#define Y_WIDTH 	64	    						  
+#define Y_WIDTH 	64	    
+
 //-----------------OLED IIC¶Ë¿Ú¶¨Òå----------------  					   
 
-#define OLED_SCLK_Clr() GPIO_ResetBits(GPIOA,GPIO_Pin_5)//SCL
-#define OLED_SCLK_Set() GPIO_SetBits(GPIOA,GPIO_Pin_5)
+#define OLED_SCLK_Clr() GPIO_ResetBits(GPIOA, GPIO_Pin_5)//SCL
+#define OLED_SCLK_Set() GPIO_SetBits(GPIOA, GPIO_Pin_5)
 
-#define OLED_SDIN_Clr() GPIO_ResetBits(GPIOA,GPIO_Pin_7)//SDA
-#define OLED_SDIN_Set() GPIO_SetBits(GPIOA,GPIO_Pin_7)
+#define OLED_SDIN_Clr() GPIO_ResetBits(GPIOA, GPIO_Pin_7)//SDA
+#define OLED_SDIN_Set() GPIO_SetBits(GPIOA, GPIO_Pin_7)
 
  		     
 #define OLED_CMD  0	//Ð´ÃüÁî
@@ -54,6 +55,3 @@ void Write_IIC_Byte(unsigned char IIC_Byte);
 
 #endif  
 	 
-
-
-
